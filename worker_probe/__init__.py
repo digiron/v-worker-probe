@@ -10,3 +10,8 @@ def greet(name: str) -> str:
 def shout(name: str) -> str:
     """Return greet(name) upper-cased."""
     return greet(name).upper()
+
+
+def farewell(name: str) -> str:
+    """Return a farewell message for ``name``."""
+    return f"goodbye, {name}"

@@ -1,4 +1,4 @@
-from worker_probe import greet, shout
+from worker_probe import greet, shout, farewell
 
 
 def test_greet():
@@ -7,3 +7,7 @@ def test_greet():
 
 def test_shout():
     assert shout("v") == "HELLO, V"
+
+
+def test_farewell():
+    assert farewell("v") == "goodbye, v"
