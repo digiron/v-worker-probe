@@ -1,0 +1,15 @@
+[project]
+name = "worker-probe"
+version = "0.0.1"
+description = "Synthetic target for v-agency spec-07 worker build loop"
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["worker_probe"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
