@@ -10,3 +10,18 @@ def greet(name: str) -> str:
 def shout(name: str) -> str:
     """Return greet(name) upper-cased."""
     return greet(name).upper()
+
+
+def whisper(name: str) -> str:
+    """Return a quiet greeting for ``name``.
+
+    Produces the same text as :func:`greet` but in lower-case, suitable for
+    contexts where a subdued response is preferred.
+
+    Args:
+        name: The recipient's name.
+
+    Returns:
+        A lower-cased greeting string, e.g. ``"hello, alice"``.
+    """
+    return greet(name).lower()
